@@ -1,0 +1,241 @@
+.btn-facebook {
+  color: #fff;
+  background-color: #3B5998;
+  border-color: #133783;
+}
+
+.btn-twitter {
+  color: #fff;
+  background-color: #2daddc;
+  border-color: #0271bf;
+}
+
+.btn-github {
+  color: #fff;
+  background-color: #fafafa;
+  border-color: #ccc;
+}
+
+// Colors
+// --------------------------------------------------
+
+$btnText:                           #fff;
+$btnTextAlt:                        #000;
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.signinForm {
+  width: 340px;
+  margin: 0 auto;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0 1px 1px 0 grey;
+  border-radius: 8px 8px;
+}
+.input {
+  margin: 15px 0;
+  vertical-align: baseline;
+}
+.snapit-logo {
+  width: 200px;
+  margin: 0 auto;
+}
+.login-button {
+  background-color: #083858;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #fff;
+}
+.login-button a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+.login-button:hover {
+  background-color: #ccc;
+  color: #083858;
+}
+.panel-login {
+  //border-radius: 8px; 
+}
+.panelintro {
+  border: 2px solid #083858; 
+  border-radius: 8px; 
+}
+.panel, .panel-heading {
+  border-bottom: 0;
+}
+.labeltext {
+  color: #083858;
+}
+
+#msform2{/*
+  width: 730px;
+  height: 292px;*/
+  margin: auto;
+  /*padding-top: 100px;*/
+  /*padding-bottom: 120px;*/
+  text-align: center;
+  position: relative;
+}
+
+#msform2 fieldset {
+    background-color: #FACA39;
+
+    border: 0 none;
+    border-radius: 3px;
+    /*box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);*/
+    
+    /*padding: 20px 30px;*/
+    box-sizing: border-box;
+    /*width: 80%;*/
+    /*margin: 0 10%;*/
+
+    border-radius: 10px;
+    
+    /*stacking fieldsets above each other*/
+    position: relative;
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+    /*margin-bottom: 20px;*/
+}
+
+/*#msform input, #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #2C3E50;
+    font-size: 13px;
+}
+*/
+
+#msform2 .btn-login {
+    width: 210px;
+    background: #ffd740;
+    border: 0 none;
+    border-radius: 2px;
+    padding: 6px 5px;
+    margin: 10px 5px 5px 5px;
+
+    cursor: pointer;
+
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+   
+}
+
+#msform2 .btn-login:hover {
+  /*background: #FAFFDD;*/
+  color: white;
+    font-weight: bold;
+    font-weight: 500;
+}
+
+#msform2 .btn-primary {
+    width: 300px;
+    height: 40px;
+    color: black;
+    background: #fbe79a;
+    border: 0 none;
+    /*margin-top:10px;*/
+    margin-bottom: 5px;
+    
+    border-radius: 100px;
+    /*padding: 6px 5px;*/
+    /*margin: 10px 5px 5px 5px;*/
+
+    cursor: pointer;
+
+    border-radius: 100px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#msform2 .btn-primary:hover {
+/*background: #FAFFDD;*/
+    color: black;
+    font-weight: bold;
+    font-weight: 500;
+}
+
+#msform2 .btn-facebook {
+    width: 300px;
+    height: 40px;
+    background: black;
+    border: 0 none;
+    /*padding: 6px 5px;*/
+    padding-top: 10px;
+    cursor: pointer;
+
+    border-radius: 100px;
+
+    margin-bottom:5px;
+
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+
+}
+#msform2 .btn-facebook:hover {
+
+    color: white;
+    font-weight: bold;
+    font-weight: 500;
+
+}
+
+#msform2 .btn-link {
+    /*width: 210px;*/
+    /*float: right;*/
+    margin-left: 60px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.form-control{
+
+  outline:0;
+  border: 0px;
+  border-radius: 0px;
+  background-color: #faca39;
+  width: 300px;
+  height: 40px;
+
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+}
+
+
+::-webkit-input-placeholder { /* Chrome */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: black;
+  opacity: 1;
+}
+
+

@@ -1,0 +1,114 @@
+<div class="singupAndLoginWrapper" style="margin-top:80px">
+  <!-- <div class="center-block" style="border: 2px solid #083858; border-radius: 8px; width: 450px; padding: 0 10px 20px 20px;"> -->
+  <div class="center-block" id="msform">
+    <fieldset style="width:732px; height:550px;">
+      <!-- <img src="assets/images/signupAndLogin_lighthouse.png" /> -->
+      <!-- <h2 class="fs-title">Create your account</h2>
+      <h3 class="fs-subtitle">이메일, 비밀번호, 이름, 생년월일을 입력하세요</h3>
+ -->
+    <!-- <h1 class="text-center" style="color: #083858;">Sign Up</h1> -->
+
+    <img src="assets/images/main_logo.png" style="width: 150px; margin: 170px 20px 400px 90px; float:left">
+        
+
+      <form class="form" name="form" ng-submit="register(form)" novalidate>
+
+        <div class="form-group" ng-class="{ 'has-success': form.email.$valid && submitted,
+                                            'has-error': form.email.$invalid && submitted }" style="margin-top:10px; margin-bottom:10px">
+          <!-- <label style="color: #083858;">Email</label><br/> -->
+
+          <input type="email" name="email" placeholder="E-mail" class="form-control" ng-model="user.email"
+                 required
+                 mongoose-error
+                  style="width: 300px; height:40px; margin-top:40px;border-bottom: 1.5px solid #ac912c;"/>
+          <p class="help-block" ng-show="form.email.$error.email && submitted" style="margin-top:0px">
+            Doesn't look like a valid email.
+          </p>
+          <p class="help-block" ng-show="form.email.$error.required && submitted" style="margin-top:0px">
+            What's your email address?
+          </p>
+          <p class="help-block" ng-show="form.email.$error.mongoose" style="margin-top:0px">
+            {{ errors.email }}
+          </p>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-success': form.password.$valid && submitted,
+                                            'has-error': form.password.$invalid && submitted }" style="margin-top:10px; margin-bottom:10px">
+          <!-- <label style="color: #083858;">Password</label><br/> -->
+
+          <input type="password" name="password" placeholder="Password" class="form-control" ng-model="user.password"
+                 ng-minlength="3"
+                 required
+                 mongoose-error
+                  style="width: 300px; height:40px; border-bottom: 1.5px solid #ac912c;"/>
+          <p class="help-block"
+             ng-show="(form.password.$error.minlength || form.password.$error.required) && submitted" style="margin-top:0px">
+            Password must be at least 3 characters.
+          </p>
+          <p class="help-block" ng-show="form.password.$error.mongoose" style="margin-top:0px">
+            {{ errors.password }}
+          </p>
+        </div>
+
+
+        <div class="form-group" ng-class="{ 'has-success': form.name.$valid && submitted,
+                                            'has-error': form.name.$invalid && submitted }">
+          <!-- <label style="color: #083858;">Name</label><br/> -->
+
+          <input type="text" name="name" placeholder="Name" class="form-control" ng-model="user.name"
+                 required
+                  style="width: 300px; height:40px; border-bottom:1.5px solid #ac912c;"/>
+          <p class="help-block" ng-show="form.name.$error.required && submitted" style="margin-top:0px">
+            A name is required
+          </p>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-success': form.birthday.$valid && submitted,
+                                              'has-error': form.birthday.$invalid && submitted }">
+          <input type="text" name="birthday" placeholder="Birthday" class="form-control" ng-model="user.birthday" required
+           style="width: 300px; height:40px; border-bottom: 1.5px solid #ac912c;">
+          <p class="help-block" ng-show="form.birthday.$error.required && submitted" style="margin-top:0px">
+            A birthday is required
+          </p>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-success': form.gender.$valid && submitted,
+                                              'has-error': form.gender.$invalid && submitted }">
+          <label class="radio-inline" style="color:#999998;">
+            <input type="radio" name="gender" ng-model="user.gender" value="man" required>Man</label>
+          <label class="radio-inline" style="color:#999998;">
+            <input type="radio" name="gender" ng-model="user.gender" value="woman" required>Woman</label>
+          <p class="help-block" ng-show="form.gender.$error.required && submitted" style="margin-top:0px">
+            A gender is required
+          </p>
+        </div>
+
+        <div>
+          <button class="btn btn-primary btn-lg btn-login" type="submit">
+            SIGN UP
+          </button>
+          <!-- 
+          <a class="btn btn-default btn-lg btn-register" href="/login">
+            Login
+          </a>
+           -->
+        </div>
+
+        <div>
+          <a class="btn btn-facebook" href="" ng-click="loginOauth('facebook')">
+            SIGN UP WITH WEIBO
+          </a>
+          <!-- 
+          <a class="btn btn-twitter" href="" ng-click="loginOauth('twitter')">
+            <i class="fa fa-twitter"></i> Connect with Twitter
+          </a>
+           -->
+        </div>
+
+        <a class="btn btn-default btn-lg btn-link" href="/forgotpassword" >
+            Forgot Password
+        </a>
+      </form>
+    </fieldset>
+  </div>
+</div>

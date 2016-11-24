@@ -1,0 +1,82 @@
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" style="width: 732px; height: 292px; margin-top:100px">
+    <div class="modal-content" style="border-radius:10px">
+
+
+<div class="singupAndLoginWrapper">
+  <!-- <div class="center-block" style="border: 2px solid #083858; border-radius: 8px; width: 450px; padding: 0 10px 20px 20px;"> -->
+  <div class="center-block" id="msform2" >
+    <fieldset >
+      <!-- <img src="assets/images/signupAndLogin_lighthouse.png" />
+      <h2 class="fs-title">Login to your account</h2>
+      <h3 class="fs-subtitle">이메일, 비밀번호를 입력하세요</h3> -->
+      <!-- <h1 class="text-center" style="color: #083858;">Login</h1> -->
+      <img src="assets/images/login_logo.png" style="margin: 104px 95px 104px 0px; float:right"/>
+      
+      <form class="form " name="form" ng-submit="login(form)" novalidate>
+
+        <div class="form-group" style="margin-bottom:5px">
+          <!-- <label style="color: #083858;" for="loginEmail">Email</label><br/>-->
+          <input type="email" name="email" class="form-control" placeholder="E-mail" id="loginEmail" ng-model="user.email" required style="width: 300px; height:40px; margin-top:40px; border-radius:100px;">
+        </div>
+
+        <div class="form-group" style="margin-bottom:5px">
+          <!-- <label style="color: #083858;">Password</label><br/> -->
+          <input type="password" name="password" placeholder="Password" class="form-control" ng-model="user.password" required style="width: 300px; height:40px; border-radius:100px;">
+        </div>
+
+        <div class="form-group has-error" style="margin-top:10px; margin-bottom:10px">
+          <p class="help-block" ng-show="form.email.$error.required && form.password.$error.required && submitted">
+             Please enter your email and password.
+          </p>
+          <p class="help-block" ng-show="form.email.$error.email && submitted">
+             Please enter a valid email.
+          </p>
+
+          <p class="help-block">{{ errors.other }}</p>
+        </div>
+
+        <div>
+          <button class="btn btn-inverse btn-lg btn-primary" type="submit" style="margin-top:5px">
+            Login
+          </button>
+          <!-- 
+          <a class="btn btn-default btn-lg btn-register" href="/signup">
+            Register
+          </a>
+           -->
+        </div>
+
+        <div>
+          <a class="btn btn-facebook" href="" ng-click="loginOauth('facebook')" style="padding: 10px 13px;">
+            Connect with Weibo
+          </a>
+          <!-- 
+          <a class="btn btn-twitter" href="" ng-click="loginOauth('twitter')">
+            <i class="fa fa-twitter"></i> Connect with Twitter
+          </a>
+           -->
+        </div>
+        
+        <a class="btn btn-default btn-lg btn-link" href="/signup" style="float:left">
+            Don't have an acount?
+        </a>
+<!-- 
+        <a class="btn btn-default btn-lg btn-link" href="/forgotpassword" style="margin-left:0px;">
+            Forgot Password
+        </a>
+ -->
+		<li ng-hide="isLoggedIn()" ng-class="{active: isActive('/mylooks')}">
+          <a ui-sref="forgotpassword" id="nav-internal">amdklmasdlkmskldmaklsmdk</a>
+        </li>
+
+      </form>
+    </fieldset>
+      
+  </div>
+</div>
+
+
+</div>
+</div>
+</div>

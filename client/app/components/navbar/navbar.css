@@ -1,0 +1,88 @@
+.navbar-custom-internal a {
+  color: #fff;
+}
+.navbar-inverse .navbar-logo {
+  /*width: 50px;*/
+  margin-top: 9px;
+}
+.navbar-brandi {
+  float: left;
+  padding: 0 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px;
+}
+
+.gravatar-image {
+  margin-top: 12px;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+}
+
+.navbar-inverse{
+    background-color: #FACA39;
+    border-color: #FACA39;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: black;
+}
+
+.navbar-inverse{
+  /*아래는 실질적으로 navbar의 테두리가 동그랗게 하지 않도록, 테두리가 생기지 않도록 초기화 하는 것이다*/
+  border-radius: 0px;
+  border-style: none;
+  /*navbar 아래에 바로 붙도록 하기 위함이다 하지만 navbar-fixed-top 옵션을 붙인다면 아래도 더이상 소용 없다*/
+  /*margin-bottom: 0px;*/
+
+  /*아래는 부트스트랩에서 제공해주는 navbar-fixed-top을 사용하지 않고 기본적으로 navbar를 fixed해주는 것이다.*/
+  /*http://sixrevisions.com/css/fixed-navigation-bar/ 이 사이트를 참고하면 된다*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 52px;
+  /*background-color: #00a087;*/
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: black;
+  opacity: 1;
+}
+
+
+.img-thumbnail {
+
+    /*display: inline-block;*/
+    display: block;
+    margin: 0 auto;
+
+
+    max-width: 100%;
+    max-height: 90%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+

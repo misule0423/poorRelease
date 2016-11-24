@@ -1,0 +1,219 @@
+<!-- <div ng-include="'app/components/navbar/navbar.html'"></div> -->
+<div class="container" style="margin-top:80px">
+  <div class="listing-wrap">
+    <div class="row">
+      <!-- main content (images, description, comments) -->
+      <div class="col-sm-6" style="margin-top:70px">
+          <div class="listing-images" style="height:600px; position: relative;
+  top: 50%;
+  transform: translateY(5%);">
+              <img ng-src="{{ look.image }}"
+                      class="img-responsive"
+                      >
+          </div>
+
+
+<!--           <div class="listing-description">
+            <h3>Description</h3>
+            {{ look.description }}
+          </div>
+          <div class="listing-description">
+            <h3>Gender</h3>
+            {{ look.gender }}
+          </div>
+          <div class="listing-description">
+            <h3>Size</h3>
+            {{ look.size }}
+          </div>
+          <div class="listing-description">
+            <h3>Color</h3>
+            {{ look.color }}
+          </div> -->
+
+        <div class="listing-main">
+            
+          <!-- <h3>Comments</h3> -->
+
+    <!--       <form ng-submit="postComment()"
+                    class="create-comment">
+            <div class="form-group">
+              <input type="text"
+                        class="form-control"
+                        placeholder="What are you thinking?"
+                        ng-model="comment.body">
+            </div>
+            <div class="comment-button">
+              <button type="submit"
+                          class="btn btn-primary">Comment</button>
+            </div>
+          </form>
+
+          <div class="container comments-div" ng-repeat="comment in comments">
+            <div class="row">
+              <div class="col-sm-1">
+                <div class="thumbnail">
+                  <img class="img-responsive user-photo"
+                           ng-src="{{ comment.gravatar }}">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <strong>{{ comment.author.name }}</strong>
+                      <span class="text-muted">Posted on: {{ comment.createTime | amDateFormat:'MMMM Do, YYYY' }}</span>
+                  </div>
+                  <div class="panel-body">
+                    {{ comment.comment }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+ -->        
+        </div>
+      </div>
+
+      <!-- the extra content (title, looks, date, user, save) -->
+      <div class="col-sm-5">
+        <div class="listing-extra">
+    <!--       <div class="listing-info">
+            <div class="panel panel-default friends">
+              <div class="panel-body">
+                <ul class="row">
+                  <li ng-repeat="plook in popLooks">
+                    <a ui-sref="look ({ lookId: plook._id })">
+                      <img class="img img-responsive" ng-src="{{ plook.image }}"></a>
+                  </li>
+                </ul>
+              <h3 class="panel-title-friends">More Looks</h3>
+            </div>
+          </div> -->
+
+
+          <!-- <h1>{{ user }}</h1> -->
+
+
+          
+
+
+          <div class="listing-description-brand">
+            <!-- <h3>ansBrandname</h3> -->
+            {{ look.ansBrandname }}
+          </div>
+
+
+
+
+          <div class="listing-description-ansTitle"  style="color:#ececec">
+            EXPLANATION
+          </div>
+          <hr style="color:#ececec; margin-top: 0px; margin-bottom: 10px">
+
+          <div class="listing-description">
+            {{ look.ansDescription }}
+            </div>
+
+          <div class="listing-description-ansTitle"  style="color:#ececec">
+            Size
+          </div>
+          <hr style="color:#ececec; margin-top: 0px; margin-bottom: 10px">
+
+          <div class="listing-description">
+            {{ look.ansSize }}
+            </div>
+
+          <div class="listing-description-ansTitle"  style="color:#ececec">
+            Gender
+          </div>
+          <hr style="color:#ececec; margin-top: 0px; margin-bottom: 10px">
+
+          <div class="listing-description">
+            {{ look.ansSex }}
+            </div>
+
+          <div class="listing-description-ansTitle"  style="color:#ececec">
+            Color
+          </div>
+          <hr style="color:#ececec; margin-top: 0px; margin-bottom: 10px">
+
+          <div class="listing-description">
+            {{ look.ansColor }}
+            </div>
+
+          <div class="listing-description-ansTitle"  style="color:#ececec">
+            Price
+          </div>
+          <hr style="color:#ececec; margin-top: 0px; margin-bottom: 10px">
+
+          <div class="listing-description">
+            {{ look.ansPrice }}
+            </div>
+<!-- 
+          <div class="listing-description">
+            <h3>ansTag</h3>
+            {{ look.ansTag }}
+          </div>
+
+          <div class="listing-description">
+            <h3>ansLink</h3>
+            {{ look.ansLink }}
+          </div>
+ -->
+          <div style="margin-top:100px">
+
+          <button type="button"
+          class="btn btn-primary btn-md pull-left"
+          ng-click="request_pay()" style="
+    width: 183px;
+    height: 50px;
+    background-color: #faca39;
+    border-color: #faca39;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: bold;
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+">BUT IT NOW</button>
+
+          <!-- <div class="row">
+            <div class="like-views-panel">
+              <a href="#"
+                   class="like-look"
+                   ng-click="addVote(look)">
+              <i class="fa fa-thumbs-o-up fa-2x icon-listing-like"></i></a>
+                <span class="likeCountListing">{{ look.upVotes }}</span>
+
+                <span class="viewCountListing pull-right">{{ look.views }}</span>
+              <i class="fa fa-eye fa-2x pull-right icon-listing-view"></i>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="listing-extra-date">
+              <span class="date-small">Added:</span>
+                <span class="listing-date-display">
+                  {{ look.createTime | amDateFormat:'MMMM Do, YYYY' }}</span>
+                 <span class="listing-name-display">By <a href="#">{{ look.userName }}</a></span>
+              </div>
+            </div>
+          </div> -->
+          <!-- Save to Favorites -->
+          <!-- only show save button if logged in -->
+          <!-- <a ui-sref="save ({ id: look._id })"
+               class="look-save btn btn-success btn-block"
+               ng-show="currentUser.id">
+               Save
+          </a>
+          <a ui-sref="authenticate"
+               class="listing-buy btn btn-success btn-block"
+               ng-show="!currentUser.id">
+            Login/Signup to Save Look
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
